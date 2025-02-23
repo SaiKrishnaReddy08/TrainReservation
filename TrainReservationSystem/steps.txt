@@ -1,0 +1,29 @@
+1) Download and install JDK
+
+https://download.oracle.com/java/23/latest/jdk-23_windows-x64_bin.exe (for windows)
+
+https://www.oracle.com/pk/java/technologies/downloads/#jdk23-mac (for mac)
+
+2) Add the below extensions in vscode:
+
+Spring Boot Extension Pack
+
+JAVA Extension pack
+
+3) open TrainReservationSystem folder in vscode
+
+4) Install Mysql
+
+5) Get the sql code from below files and execute in mysql workbench.
+
+TrainReservationSystem\src\main\resources\database_sql\TrainManagementSQL.sql
+
+TrainReservationSystem\src\main\resources\database_sql\trains.sql
+
+6) In "TrainReservationSystem\src\main\resources\application.properties" file set mysql username and password
+
+7) open TrainReservationSystem\src\main\java\com\trainReservation\TrainReservationSystemApplication.java
+
+8) Right click > Run Java
+
+9) Open localhost:8080 in your browser.
