@@ -33,7 +33,7 @@ create table booking_details(booking_id int primary key auto_increment,
                              DOJ date,
                              coach varchar(10) not null,
                              no_of_seats int not null,
-                             total_fare float not null
+                             total_fare float not null,
 			     FOREIGN KEY (train_number, DOJ) REFERENCES train_availability(train_number, DOJ)
 			);
                              
