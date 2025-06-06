@@ -29,13 +29,14 @@ create table train_availability( train_number int references train(train_number)
 
 create table booking_details(booking_id int primary key auto_increment,
 							 user_id varchar(25) references user(user_id) ,
-                             train_number int references train(train_number),
-                             DOJ date references train_availability(DOJ),
+                             train_number int,
+                             DOJ date,
                              coach varchar(10) not null,
                              no_of_seats int not null,
-                             total_fare float not null);
+                             total_fare float not null
+			     FOREIGN KEY (train_number, DOJ) REFERENCES train_availability(train_number, DOJ)
+			);
                              
-
 create table Passenger
 ( passenger_id int auto_increment primary key,
   booking_id int references booking_details(booking_id),
