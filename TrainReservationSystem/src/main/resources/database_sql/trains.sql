@@ -1,3 +1,4 @@
+use RailwayManagement;
 -- 12760 - Hyderabad to Chennai
 insert into train values(12760, "Charminar Express", "Hyderabad", "Chennai", 455, 2825, 1685, 1190);
 
