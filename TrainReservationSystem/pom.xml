@@ -11,6 +11,7 @@
 	<groupId>com.example</groupId>
 	<artifactId>TrainReservationSystem</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
 	<name>TrainReservationSystem</name>
 	<description>Building Train Reservation Application</description>
 	<properties>
